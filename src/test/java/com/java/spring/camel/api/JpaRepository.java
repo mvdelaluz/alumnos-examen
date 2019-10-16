@@ -1,0 +1,3 @@
+package com.java.spring.camel.api;
+
+import org.springframework.data.jpa.repository.JpaRepository;import org.springframework.stereotype.Repository;import java.util.List;@Repositorypublic interface alumnosRespository extends JpaRepository<alumnos, Integer> {    // custom query to search to blog post by title or content    List<Blog> findByTitleContainingOrContentContaining(String nombre, String apaterno,String amaterno,int edad, String carrera, int semestre, String tutor, int promedio, int porcentaje_carrera, 	int credito_aprobados, int materias_reprobadas);    }
