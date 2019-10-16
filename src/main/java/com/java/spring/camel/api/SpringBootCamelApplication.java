@@ -21,8 +21,8 @@ public void configure() throws Exception{
 };
 	
 @Bean
-CamelContextConfiguration contextConfiguration(@Value("${activemq.user}") String user,
-                                                   @Value("${activemq.password}") String password,
+CamelContextConfiguration contextConfiguration(@Value("${activemq.admin}") String user,
+                                                   @Value("${activemq.admin}") String password,
                                                    @Value("${activemq.url}") String url) {
         return new CamelContextConfiguration() {
 
